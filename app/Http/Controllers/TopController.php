@@ -11,8 +11,8 @@ class TopController extends Controller
   {
     $sampleValue = "sample テキストです。";
 
-
-    $records = DB::connection('mysql')->select("select * from items");
+    //参照文（select）
+    // $records = DB::connection('mysql')->select("select * from items");
     // query 実行処理 実行結果を $records に代入
     // dd($records);
     // dd( $records[0]->name );
@@ -24,8 +24,8 @@ class TopController extends Controller
 
 
     //更新文（update）
-    $updateResult = DB::connection("mysql")->update("update items set price = 600 where name = 'メロン'");
-    dd($updateResult);
+    // $updateResult = DB::connection("mysql")->update("update items set price = 600 where name = 'メロン'");
+    // dd($updateResult);
 
 
     //削除文（delete）
