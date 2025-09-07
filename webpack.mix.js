@@ -1,5 +1,6 @@
 const directories = [
-    "index"
+    "index",
+    "login" //第９章で追加
 ];
 
 const mix = require('laravel-mix');
